@@ -1,0 +1,18 @@
+<h1>Editar usuário</h1>
+<div class="card">
+    <div class="card-body">
+        <form action="/usuarios/editar" method="post">
+            <input type="hidden" name="id" value="{{usuario.id}}">
+            <label for="nome">Nome:</label>
+                <input type="text" name="nome" class="form-control" value="{{usuario.nome}}" required>
+            <label for="email">Email</label>
+                <input type="email" name="email" class="form-control" value="{{usuario.email}}" required>
+            <label for="senha">Senha</label>
+                <input type="password" name="senha" class="form-control" value="{{usuario.senha}}" required>
+            <label for="senha">Re-senha</label>
+                <input type="password" name="resenha" class="form-control" value="" required>
+            <button type="submit" class="btn btn-success mt-2">Atualizar</button>
+            <a href="/usuarios/listarusuarios"><button type="button" class="btn btn-danger mt-2">Cancelar</button></a>
+        </form>
+    </div>
+</div>

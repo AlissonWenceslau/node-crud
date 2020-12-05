@@ -1,0 +1,16 @@
+<h1>Cadastro</h1>
+<div class="card">
+    <div class="card-body">
+        <form action="/usuarios/novousuario" method="post">
+            <label for="nome">Nome:</label>
+                <input type="text" name="nome" class="form-control" required>
+            <label for="email">Email</label>
+                <input type="email" name="email" class="form-control" required>
+            <label for="senha">Senha</label>
+                <input type="password" name="senha" class="form-control" required>
+            <label for="re-senha">Re-senha</label>
+                <input type="password" name="resenha" class="form-control" required>
+            <button type="submit" class="btn btn-success mt-2">Cadastrar</button>
+        </form>
+    </div>
+</div>
