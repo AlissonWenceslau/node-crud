@@ -3,7 +3,7 @@ const flash = require('connect-flash');
 const bodyParser = require('body-parser')
 const handlebars = require('express-handlebars')
 const session = require('express-session')
-const Usuarios = require('./routes/Usuarios.routes')
+const usuariosRoutes = require('./routes/Usuarios.routes')
 const app = express()
 
 //Session
@@ -41,7 +41,7 @@ app.get('/', (req, res)=>{
     res.render('home')
 })
 
-app.use('/usuarios', Usuarios)
+app.use('/usuarios', usuariosRoutes)
 
 
 

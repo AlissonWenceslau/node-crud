@@ -1,6 +1,6 @@
 # Sistema mini CRUD
 
-Este é um sistema simples de CRUD. O projeto foi desenvolvido em cima do NodeJS juntamente com bootstrap
+Este é um sistema simples de CRUD. O projeto foi desenvolvido em cima do NodeJS juntamente com MVC e bootstrap 
 
 ## Instalação
 
@@ -10,6 +10,7 @@ Para que a aplicação funcione, basta dar um **npm install** para que as depend
 - Conhecimento no MYSQL
 - Conhecimento booststrap
 - Conhecimento handlesbars
+- Conhecimento no padrão MVC
 
 ## Dependências empregadas
 1. Express
