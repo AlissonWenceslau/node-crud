@@ -1,10 +1,10 @@
 const express = require('express')
+const app = express()
 const flash = require('connect-flash');
-const bodyParser = require('body-parser')
 const handlebars = require('express-handlebars')
+const bodyParser = require('body-parser')
 const session = require('express-session')
 const usuariosRoutes = require('./routes/Usuarios.routes')
-const app = express()
 
 //Session
 app.use(session({
@@ -38,7 +38,7 @@ app.use(bodyParser.json())
 
 
 app.get('/', (req, res)=>{
-    res.render('home')
+    res.render('index/index')
 })
 
 app.use('/usuarios', usuariosRoutes)
